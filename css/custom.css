@@ -2,3 +2,12 @@ div.flex {
     display: flex;
     justify-content: space-between;
 }
+
+div.flex>div {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.align-left {
+    text-align: left;
+}
