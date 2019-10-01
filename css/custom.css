@@ -32,3 +32,19 @@ div.emph>div {
 h1.uppercase {
     text-transform: uppercase;
 }
+.reveal section img.plain {
+    border-style: none;
+    border-width: 0px;
+    background: rgba(255,255,255,0);
+    top: 15px;
+    position: relative;
+}
+.border {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+span.border {
+    padding-left: 2px;
+    padding-right: 2px;
+}
