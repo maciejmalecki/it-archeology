@@ -70,3 +70,6 @@ span.border {
     font-size: large;
     margin: 2px;
 }
+.smaller {
+    font-size: xx-large;
+}
