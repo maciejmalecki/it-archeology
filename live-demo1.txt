@@ -1,0 +1,11 @@
+LIVE DEMO 1
+
+1. IDE dostępne natychmiast po uruchomieniu
+2. Systemem operacyjnym jest pochodna Microsoft BASIC wzbogacona o procedury wejścia wyjścia (KERNAL)
+3. KERNAL odpowiada za obsługę klawiatury, ekranu, drukarek, pamięci masowej (taśma, dyskietka)
+4. Tryb bezpośredni
+5. Edytor ekranowy, dowolność pozycji, kolory, czyszczenie ekranu, działanie trybu bezpośredniego
+6. Przykładowy program, modyfikowanie (zmiana goto na for)
+7. Zapisanie na dyskietce
+8. Katalog dyskietki
+9. Wczytywanie (maze, back, digiloi)
