@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="956.69287"
+   height="366.02362"
+   id="MOS Technology Logo">
+  <defs
+     id="defs12" />
+  <g
+     transform="matrix(7.2018437,0,0,7.2018437,35.433048,35.374015)"
+     id="g2432">
+    <rect
+       width="11"
+       height="41"
+       x="0"
+       y="0"
+       id="M Left"
+       style="fill:#ffffff" />
+    <circle
+       cx="61.5"
+       cy="20.5"
+       r="20.5"
+       id="O"
+       style="fill:#ffffff" />
+    <rect
+       width="39"
+       height="11"
+       x="84"
+       y="15"
+       id="S Center"
+       style="fill:#ffffff" />
+    <path
+       d="M 28,-9.9999998e-08 L 28,41 L 39,41 L 39,11 C 39,4.9279988 34.071999,-9.9999998e-08 28,-9.9999998e-08 z"
+       id="path2389"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="M 13.999999,-1.7763568e-15 L 13.999999,41 L 25,41 L 25,10.999999 C 25,4.927998 20.071998,-1.7763568e-15 13.999999,-1.7763568e-15 z"
+       id="path2423"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="M 95.000001,0.49999995 C 88.928,0.50000095 84.000001,5.4280009 84.000001,11.5 L 123,11.5 L 123,0.49999995 L 95.000001,0.49999995 z"
+       id="path2425"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="M 112,40.5 C 118.072,40.5 123,35.571999 123,29.5 L 84.000005,29.5 L 84.000005,40.5 L 112,40.5 z"
+       id="path2430"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+</svg>

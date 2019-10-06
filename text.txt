@@ -1,0 +1,37 @@
+PART 1
+
+1. Slajd tytułowy
+    Dlaczego ten temat
+    Uncle's Bob clean architecture
+    Nie da się czytać przekładu
+    Dodatek historyczny
+2. O mnie
+    Gdzie pracuję
+    Co robię
+    Jakie doświadczenie, jakie języki
+    Jak zaczynałem (mama)
+    Meritum I
+3. Za każdym razem gdy myślisz "szkoda że na to nie wpadłem" pomyślcie że byli tacy którzy wpadli a nie zarobili
+
+PART 2: IDE
+
+Live demo
+
+1. Włączyć, opisać co mamy
+2. Edytor ekranowy
+3. Atrybuty ekranu
+4. Prosty program
+5. Edycja programu
+6. Zapis na dysku
+7. Praca z dyskiem: katalog, odczyt
+8. Wczytać inny program: frosch
+9. Wczytać jeszcze inny program: strip poker lub pirates
+
+PART 3: Carol Shaw and raster time
+
+Slajdy (Carol, Atari 2600, River raid)
+
+Live demo
+
+może da się raster na wait napisać?
+
