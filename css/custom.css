@@ -73,3 +73,9 @@ span.border {
 .smaller {
     font-size: xx-large;
 }
+pre.small-code {
+  font-size: medium;
+}
+.other-color {
+  color: skyblue;
+}
