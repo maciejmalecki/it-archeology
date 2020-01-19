@@ -204,6 +204,35 @@ JSR   Jump to New Location Saving Return Address        TYA   Transfer Index Y t
       </pre>
     </section>
     <section>
+      <h3>Addressing modes (6502)</h3>
+      <pre>
++----------------+-----------------------+---------+---------+----------+
+| Addressing Mode| Assembly Language Form| OP CODE |No. Bytes|No. Cycles|
++----------------+-----------------------+---------+---------+----------+
+|  Immediate     |   LDA #$FF            |   $A9   |    2    |    2     |
+|  ZeroPage      |   LDA $FF             |   $A5   |    2    |    3     |
+|  ZeroPage,X    |   LDA $FF,X           |   $B5   |    2    |    4     |
+|  Absolute      |   LDA $FFFF           |   $AD   |    3    |    4     |
+|  Absolute,X    |   LDA $FFFF,X         |   $BD   |    3    |    4*    |
+|  Absolute,Y    |   LDA $FFFF,Y         |   $B9   |    3    |    4*    |
+|  (Indirect,X)  |   LDA ($FF,X)         |   $A1   |    2    |    6     |
+|  (Indirect),Y  |   LDA ($FF),Y         |   $B1   |    2    |    5*    |
++----------------+-----------------------+---------+---------+----------+
+      </pre>
+    </section>
+    <section>
+      <h3>Machine code</h3>
+      <code class="small-code">169 0 141 32 208 169 1 141 32 208 76 0 192</code>
+      <h3 class="fragment" data-fragment-index="1">Syntax</h3>
+      <pre class="fragment" data-fragment-index="1">
+                    169   0
+                    141  32 208
+                    169   1
+                    141  32 208
+                     76   0 192
+      </pre>
+    </section>
+    <section>
       <h3>BASIC</h3>
       <pre>
 10 POKE 53280,0
@@ -249,6 +278,21 @@ $C00A $4C $00 $C0
           </pre>
         </div>
       </div>
+    </section>
+    <section>
+      <h3>Machine Language</h3>
+      <p>Size and speed of the program</p>
+      <div>
+          <pre class="other-color">
+                             size (b)      cycles
+            $C000 LDA #$00         2             2
+            $C002 STA $D020        3             4
+            $C005 LDA #$01         2             2
+            $C007 STA $D020        3             4
+            $C00A JMP $C000        3             3
+          </pre>
+      </div>
+
     </section>
 
     <section>
