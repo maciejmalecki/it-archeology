@@ -74,11 +74,23 @@ span.border {
     font-size: xx-large;
 }
 pre.small-code {
-  font-size: medium;
+    font-size: medium;
 }
 code.small-code {
-  font-size: xx-large;
+    font-size: xx-large;
 }
 .other-color {
-  color: skyblue;
+    color: skyblue;
+}
+h3.other-color {
+    color: skyblue;
+}
+h3.other-color-2 {
+    color: springgreen;
+}
+h3.other-color-3 {
+    color: tomato;
+}
+h3.other-color-4 {
+    color: tan;
 }
