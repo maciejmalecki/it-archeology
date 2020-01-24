@@ -288,12 +288,15 @@ $C00A $4C $00 $C0
       <p>Size and speed of the program</p>
       <div>
           <pre class="other-color">
-                             size (b)      cycles
-            $C000 LDA #$00         2             2
-            $C002 STA $D020        3             4
-            $C005 LDA #$01         2             2
-            $C007 STA $D020        3             4
-            $C00A JMP $C000        3             3
+                         size (b)      cycles    time* (&micro;s)
+        $C000 LDA #$00         2            2          2.03
+        $C002 STA $D020        3            4          4.06
+        $C005 LDA #$01         2            2          2.03
+        $C007 STA $D020        3            4          4.06
+        $C00A JMP $C000        3            3          3.05
+
+
+        *PAL version, 0.965MHz
           </pre>
       </div>
 
