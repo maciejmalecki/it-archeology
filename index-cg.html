@@ -27,20 +27,22 @@
 <div class="reveal">
   <div class="slides">
     <section class="title" data-background-image="img/cia-out.jpg" data-background-opacity="0.6">
-      <h1>Back to ASSEMBLY</h1>
+      <h1>Carol Shaw story</h1>
+      <h3>or being a programmer in early 80-ties</h3>
+      <p>- Maciek Małecki, 2020 -</p>
     </section>
-    <section>
+
+    <section data-background-image="img/terminator-assembly.jpg">
+    </section>
+
+    <section data-background-image="img/terminator-assembly.jpg" data-background-opacity="0.2">
       <h2>Why?</h2>
-      <h3 class="fragment other-color">A bit of history</h3>
+      <h3 class="fragment other-color">Maybe you like history?</h3>
       <h3 class="fragment other-color-2">How does a machine work?</h3>
       <h3 class="fragment other-color-3">How can a JIT produce faster code than GCC?</h3>
       <h3 class="fragment other-color-4">Why reactive systems perform better than multithreaded?</h3>
     </section>
-    <section data-background-image="img/terminator-assembly.jpg">
-    </section>
-    <section>
-      <h2>Carol Shaw story</h2>
-    </section>
+
     <section>
       <h3>An author of River Raid game (1982)</h3>
       <img src="img/carol-shaw.jpg" alt="">
@@ -73,22 +75,20 @@
       <img src="img/pong.jpg" alt="pong" height="550">
     </section>
 
-    <section>
-      <div class="flex">
+    <section data-background-image="img/mos6502-mm.JPG">
+      <h2>MOS 6502</h2>
+      <div class="flex fragment">
         <div>
           <img src="img/chuckpeddle.jpg" alt="Chuck" width="500">
         </div>
         <div class="align-left">
-          <h2>Chuck Peddle</h2>
-          <h3>1937 - 2019</h3>
+          <h3>Chuck Peddle</h3>
+          <h4>1937 - 2019</h4>
         </div>
       </div>
     </section>
 
-    <section>
-      <h3>Microprocessor block diagram</h3>
-      <img src="img/6502-diagram.png" alt="6502" height="550">
-    </section>
+
     <section>
       <h3>Machine code</h3>
       <p>
@@ -117,6 +117,20 @@ $4C $00 $C0
         </div>
       </div>
     </section>
+
+    <section>
+      <h3>Microprocessor block diagram</h3>
+      <img src="img/6502-diagram.png" alt="6502" height="550">
+    </section>
+
+    <section>
+      <h4>Example</h4>
+      <h4>LDA - LoaD Accumulator</h4>
+      <pre>
+                            LDA value
+      </pre>
+    </section>
+
     <section>
       <h3>Addressing modes (6502)</h3>
       <pre>
@@ -132,6 +146,7 @@ $4C $00 $C0
 |  (Indirect,X)  |   LDA ($FF,X)         |   $A1   |    2    |    6     |
 |  (Indirect),Y  |   LDA ($FF),Y         |   $B1   |    2    |    5*    |
 +----------------+-----------------------+---------+---------+----------+
+*add extra 1 cycle if crossing 256b page boundary
       </pre>
     </section>
     <section>
@@ -221,7 +236,7 @@ $C00A $4C $00 $C0
       </div>
       <code class="fragment small-code">169 0 141 32 208 169 1 141 32 208 76 0 192</code>
     </section>
-    <section data-background-image="img/bajtek.png">
+    <section data-background-image="img/bajtek.png" data-background-opacity="0.4">
     </section>
     <section>
       <h3>Machine Language</h3>
