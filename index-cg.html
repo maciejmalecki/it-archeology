@@ -86,96 +86,52 @@
     </section>
 
     <section>
-      <h3>MOS 6502</h3>
-      <img src="img/mos6502-mm.JPG" alt="6502mm" height="400">
-    </section>
-    <section>
-      <div class="tiles">
-        <div>
-          <img src="img/542px-Apple_II_typical_configuration_1977.png" alt="AppleII">
-          <p>Apple II</p>
-        </div>
-        <div>
-          <img src="img/889px-Commodore_PET2001.jpg" alt="PET2001">
-          <p>Commodore PET 2001</p>
-        </div>
-        <div>
-          <img src="img/Atari-2600-Wood-4Sw-Set.png" alt="Atari2600">
-          <p>Atari VCS</p>
-        </div>
-        <div>
-          <img src="img/640px-Atari-800-Computer-FL.jpg" alt="Atari 800">
-          <p>Atari 800</p>
-        </div>
-        <div>
-          <img src="img/640px-Commodore-VIC-20-FL.jpg" alt="VIC 20">
-          <p>Commodore VIC-20</p>
-        </div>
-        <div class="break"></div>
-        <div>
-          <img src="img/600px-C64c_system.jpg" alt="C64C">
-          <p>Commodore 64</p>
-        </div>
-        <div>
-          <img src="img/640px-Atari-7800-wControl-Pad-L.jpg" alt="Atari 7800">
-          <p>Atari 7800</p>
-        </div>
-        <div>
-          <img src="img/640px-BBC_Micro_Front_Restored.jpg" alt="BBC Micro">
-          <p>BBC Micro</p>
-        </div>
-        <div>
-          <img src="img/640px-Nintendo-Famicom-Console-Set-FL.jpg" alt="FamiCom">
-          <p>Nintendo Famicom</p>
-        </div>
-        <div>
-          <img src="img/640px-NES-Console-Set.png" alt="NES">
-          <p>Nintendo Entertainment System</p>
-        </div>
-        <div class="break"></div>
-        <div>
-          <img src="img/592px-Apple_iieb.jpg" alt="Apple IIe">
-          <p>Apple IIe</p>
-        </div>
-        <div>
-          <img src="img/400px-Cbm710_ta.jpg" alt="CBM II">
-          <p>CBM II</p>
-        </div>
-        <div>
-          <img src="img/640px-Commodore_Plus_4.jpg" alt="Plus 4">
-          <p>Commodore Plus/4</p>
-        </div>
-        <div>
-          <img src="img/Commodore-128.jpg" alt="C128">
-          <p>Commodore 128</p>
-        </div>
-        <div>
-          <img src="img/622px-Tamagotchi_0124_ubt.jpeg" alt="Tomagotchi">
-          <p>Tomagotchi</p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3>The 1977 Trinity</h3>
-      <img src="img/1920px-Trinity77.jpg" alt="Trinity1977">
-      <div class="rights">By Springsgrace - Own work, CC BY-SA 4.0,
-        https://commons.wikimedia.org/w/index.php?curid=79216985
-      </div>
-    </section>
-    <section>
       <h3>Microprocessor block diagram</h3>
       <img src="img/6502-diagram.png" alt="6502" height="550">
     </section>
     <section>
       <h3>Machine code</h3>
-      <code class="small-code">169 0 141 32 208 169 1 141 32 208 76 0 192</code>
-      <h3 class="fragment" data-fragment-index="1">Syntax</h3>
-      <pre class="fragment" data-fragment-index="1">
-                    169   0
-                    141  32 208
-                    169   1
-                    141  32 208
-                     76   0 192
+      <p>
+        <code class="small-code">169 0 141 32 208 169 1 141 32 208 76 0 192</code>
+      </p>
+
+      <h3 class="fragment" data-fragment-index="2">Syntax</h3>
+      <div class="flex">
+        <div class="fragment">
+          <pre class="fragment" data-fragment-index="2">
+               169   0
+               141  32 208
+               169   1
+               141  32 208
+                76   0 192
+          </pre>
+        </div>
+        <div class="fragment">
+          <pre class="fragment other-color" data-fragment-index="2">
+$A9 $00
+$8D $20 $D0
+$A9 $01
+$8D $20 $D0
+$4C $00 $C0
+      </pre>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Addressing modes (6502)</h3>
+      <pre>
++----------------+-----------------------+---------+---------+----------+
+| Addressing Mode| Assembly Language Form| OP CODE |No. Bytes|No. Cycles|
++----------------+-----------------------+---------+---------+----------+
+|  Immediate     |   LDA #$FF            |   $A9   |    2    |    2     |
+|  ZeroPage      |   LDA $FF             |   $A5   |    2    |    3     |
+|  ZeroPage,X    |   LDA $FF,X           |   $B5   |    2    |    4     |
+|  Absolute      |   LDA $FFFF           |   $AD   |    3    |    4     |
+|  Absolute,X    |   LDA $FFFF,X         |   $BD   |    3    |    4*    |
+|  Absolute,Y    |   LDA $FFFF,Y         |   $B9   |    3    |    4*    |
+|  (Indirect,X)  |   LDA ($FF,X)         |   $A1   |    2    |    6     |
+|  (Indirect),Y  |   LDA ($FF),Y         |   $B1   |    2    |    5*    |
++----------------+-----------------------+---------+---------+----------+
       </pre>
     </section>
     <section>
@@ -216,23 +172,7 @@ JMP   Jump to New Location                              TXS   Transfer Index X t
 JSR   Jump to New Location Saving Return Address        TYA   Transfer Index Y to Accumulator
       </pre>
     </section>
-    <section>
-      <h3>Addressing modes (6502)</h3>
-      <pre>
-+----------------+-----------------------+---------+---------+----------+
-| Addressing Mode| Assembly Language Form| OP CODE |No. Bytes|No. Cycles|
-+----------------+-----------------------+---------+---------+----------+
-|  Immediate     |   LDA #$FF            |   $A9   |    2    |    2     |
-|  ZeroPage      |   LDA $FF             |   $A5   |    2    |    3     |
-|  ZeroPage,X    |   LDA $FF,X           |   $B5   |    2    |    4     |
-|  Absolute      |   LDA $FFFF           |   $AD   |    3    |    4     |
-|  Absolute,X    |   LDA $FFFF,X         |   $BD   |    3    |    4*    |
-|  Absolute,Y    |   LDA $FFFF,Y         |   $B9   |    3    |    4*    |
-|  (Indirect,X)  |   LDA ($FF,X)         |   $A1   |    2    |    6     |
-|  (Indirect),Y  |   LDA ($FF),Y         |   $B1   |    2    |    5*    |
-+----------------+-----------------------+---------+---------+----------+
-      </pre>
-    </section>
+
     <section>
       <h3>BASIC</h3>
       <pre>
@@ -301,12 +241,6 @@ $C00A $4C $00 $C0
       </div>
 
     </section>
-
-    <section>
-      <h2>All stuff on Github</h2>
-      <img src="img/qr-code.png" alt="QR Code">
-      <p>https://github.com/maciejmalecki/chamberconf2019</p>
-	</section>
   </div>
 </div>
 
