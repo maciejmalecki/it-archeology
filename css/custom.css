@@ -94,3 +94,6 @@ h3.other-color-3 {
 h3.other-color-4 {
     color: tan;
 }
+h1.title, h2.title, h3.title {
+    text-decoration: underline;
+}

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>IT Archeology</title>
+  <title>A Carol Shaw story</title>
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/reveal.css">
@@ -27,7 +27,7 @@
 <div class="reveal">
   <div class="slides">
     <section class="title" data-background-image="img/cia-out.jpg" data-background-opacity="0.6">
-      <h1>Carol Shaw story</h1>
+      <h2 class="title">a Carol Shaw story</h2>
       <h3>or being a programmer in early 80-ties</h3>
       <p>- Maciek Małecki, 2020 -</p>
     </section>
@@ -58,11 +58,21 @@
     </section>
     <section>
       <div class="flex">
-        <img src="img/KL_UMC_UM6507.jpg" alt="" width="400">
-        <img src="img/MOS_6532_3776_package_top.jpg" alt="" width="400">
+        <img src="img/KL_UMC_UM6507.jpg" alt="" width="250">
+        <img src="img/MOS_6532_3776_package_top.jpg" alt="" width="250">
+        <img src="img/tia.jpg" alt="" width="250">
       </div>
-      <div class="emph fragment">
-        <div>128 bytes of RAM!</div>
+      <div class="emph fragment" data-fragment-index="1">
+        <div>only 128 bytes of RAM!</div>
+      </div>
+      <div>
+        <ul>
+          <li class="fragment" data-fragment-index="2">Color graphics chip (TIA) but no framebuffer</li>
+          <li class="fragment" data-fragment-index="2">RAM-less design</li>
+          <li class="fragment" data-fragment-index="3">20-bit register for halve of the playfield</li>
+          <li class="fragment" data-fragment-index="3">2 8-bit registers for players, 2 1-bit missiles, 1 1-bit ball</li>
+          <li class="fragment" data-fragment-index="4">Must be rewritten every scan line</li>
+        </ul>
       </div>
     </section>
     <section>
