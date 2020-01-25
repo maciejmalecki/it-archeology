@@ -37,10 +37,11 @@
 
     <section data-background-image="img/terminator-assembly.jpg" data-background-opacity="0.2">
       <h2>Why?</h2>
-      <h3 class="fragment other-color">Maybe you like history?</h3>
-      <h3 class="fragment other-color-2">How does a machine work?</h3>
-      <h3 class="fragment other-color-3">How can a JIT produce faster code than GCC?</h3>
-      <h3 class="fragment other-color-4">Why reactive systems perform better than multithreaded?</h3>
+      <h4 class="fragment other-color">Maybe you like history?</h4>
+      <h2 class="fragment">Wanna know...</h2>
+      <h4 class="fragment other-color-2">... how does a machine work?</h4>
+      <h4 class="fragment other-color-3">...how can a JIT produce faster code than GCC?</h4>
+      <h4 class="fragment other-color-4">...why reactive systems perform better than multithreaded?</h4>
     </section>
 
     <section>
@@ -135,8 +136,15 @@ $4C $00 $C0
     </section>
 
     <section>
-      <h4>Example</h4>
-      <h4>LDA - LoaD Accumulator</h4>
+      <h3>Assembly language</h3>
+      <p>
+        Human readable form of machine code.
+      </p>
+    </section>
+
+    <section>
+      <h4>Assembly instruction example</h4>
+      <h4 class="other-color-2">LDA - LoaD Accumulator</h4>
       <pre>
                             LDA value
       </pre>
@@ -198,15 +206,16 @@ JMP   Jump to New Location                              TXS   Transfer Index X t
 JSR   Jump to New Location Saving Return Address        TYA   Transfer Index Y to Accumulator
       </pre>
     </section>
-
-    <section>
+    <section data-background-image="img/billgatesypaulallen.0.jpg" data-background-opacity="0.6">
+    </section>
+    <section data-background-image="img/billgatesypaulallen.0.jpg" data-background-opacity="0.1">
       <h3>BASIC</h3>
       <pre>
 10 POKE 53280,0
 20 POKE 53280,1
 30 GOTO 10
       </pre>
-      <h3 class="fragment">Assembly</h3>
+      <h3 class="fragment">Assembly & machine code</h3>
       <div class="flex">
         <div class="fragment">
           <pre>
@@ -247,6 +256,9 @@ $C00A $4C $00 $C0
       </div>
       <code class="fragment small-code">169 0 141 32 208 169 1 141 32 208 76 0 192</code>
     </section>
+
+    <section data-background-image="img/c64.jpg">
+    </section>
     <section data-background-image="img/bajtek.png" data-background-opacity="0.4">
     </section>
     <section>
@@ -265,7 +277,10 @@ $C00A $4C $00 $C0
         *PAL version, 0.965MHz
           </pre>
       </div>
+    </section>
 
+    <section>
+      <h1>slide</h1>
     </section>
   </div>
 </div>
