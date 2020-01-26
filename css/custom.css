@@ -19,7 +19,7 @@ div.flex>div {
 div.rights {
     font-size: small;
 }
-div.emph>div {
+div.emph div {
     margin: 10px;
     border-style: solid;
     border-width: 3px;
