@@ -79,7 +79,7 @@ pre.small-code {
 code.small-code {
     font-size: xx-large;
 }
-.other-color {
+.other-color, h2.other-color, h1.other-color {
     color: skyblue;
 }
 h3.other-color, h4.other-color {
